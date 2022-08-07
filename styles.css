@@ -95,17 +95,24 @@ a:active{
 	text-align: center;
 	background-color: #712e1e;
 	width: 120px;
-	height: 250px;
+	min-height: 250px;
 	width: 20%;
 	border-radius: 10px;
-	padding: 10px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	border: 2px solid#541412;
+    margin: 0 5px ;
+}
+.icons{
+	height: 40px;
+	opacity: 0.45;
 }
 #main-footer{
 	clear: both;
 	text-align: center;
 	padding: 20px;
 	margin-top: 40px;
-	color: black;
+	color: #541412;
 	width: 100%;
 }
 
@@ -126,7 +133,7 @@ img{
 	width: 100%;
 	margin-top: 10px;
 }
-.lg-3 :hover{
+.lg-3:hover{
 	opacity: 50%;
 }
 
@@ -134,23 +141,24 @@ img{
 	margin: auto;
 }
 .rvw{
-	
-	margin: 5px;
-	padding: 20px;
+	margin: 5px auto;
+	padding: 10px;
 	margin-bottom: 40px;
 	box-shadow: 0 3px 5px black;
 	box-sizing: border-box;
 	border-radius: 10px;
-	width: 80%;
-	background-color: #712e1e
-	
+	width: 100%;
+	background-color: #752c1a;
+}
+.rvw>p{
+	margin-top: 0;
 }
 .csr{
 	border: 1px solid #541412;
 	width: 80%;
 	height: 300px;
-	margin-right: auto;
-	margin-left: auto;
+	margin-right: 8px;
+	margin-left: 8px;
 	font-family: monospace;
 	border-top-right-radius: 25px;
 	border-bottom-left-radius: 25px;
@@ -169,13 +177,15 @@ img{
 		width: 100%;
 		display: block;	
 	}
-.rvw{
+    .rvw{
 	float: none;
 	width: 80%;
 	margin: auto;
 	margin-bottom: 5px;
 }
-
+.services {
+	display: block;
+}
 }
 
 @media(min-width: 1200px){
@@ -199,10 +209,6 @@ img{
 		width: 50%;
 		box-sizing: border-box;
 
-}
-.rvw{
-
-}
-}
+}}
 
 	
