@@ -179,8 +179,3 @@ h2{
 	align-items: center;
 	padding: 10px;
 }
-@media screen (max-width:320px) {
-	#showcase{
-		text-align: center;
-	}
-}
