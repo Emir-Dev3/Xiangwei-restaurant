@@ -122,11 +122,13 @@ a:active{
 .right, .left{
 	display: flex;
 	flex-direction: row;
+	gap: 10%;
 }
 
-img{
-	max-width: 100%;
-	max-height: 100%;
+.food-item{
+	width: 40%;
+	border: #752c1a 1px double;
+	border-radius: 10%;
 }
 .row{
 	width: 100%;
