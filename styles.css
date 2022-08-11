@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;600;700&display=swap');
 * {
 	box-sizing: border-box;
 }
 body{
 	background-color: #f3e4bb;
-	color: goldenrod;
-	font-family: cursive;
+	color: rgb(85, 52, 4);
+	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 16px;
 	line-height: 1.6em;
 	margin: 0;
@@ -30,7 +31,7 @@ li{
 	margin:  0 20px;
 	list-style: none;
 }
-a{
+ nav a{
 	color: rgb(95, 75, 7);
 	text-decoration: none;
 	font-size: 18px;
@@ -48,14 +49,13 @@ a:active{
 	background-position: center;
 	background-size : cover;
 	margin-bottom: 30px;
-	text-align: left;
-	min-height: 500px;
-	padding-left: 300px;
+	min-height: 400px;
 	padding-bottom: 20px;
-    border-radius: 7px;
 	color: #f8cbaf;
 	font-size: large;
-	align-items: center;
+	text-align: left;
+	padding-left: 30%;
+	padding-top: 150px;
 }
 .btn-1 {
 	background-color: #712e1e;
@@ -71,6 +71,15 @@ a:active{
 	background-color: #f3e4bb;
 	transform: translate(0px, 0px) rotate(20deg);
 	color: #541412;
+}
+.btn-2{
+	background-color: #712e1e;
+	padding: 7px;
+	border-radius: 5px;
+	border: none;
+	color: #f3e4bb;
+	font-family: cursive;
+    font-size: large;
 }
 
 #showcase h1{
@@ -91,6 +100,7 @@ a:active{
 	justify-content: space-between;
 }
 .services {
+	color: goldenrod;
     height: 200px;
 	text-align: center;
 	background-color: #712e1e;
@@ -103,9 +113,16 @@ a:active{
 	border: 2px solid#541412;
     margin: 0 5px ;
 }
+#services{
+	padding-bottom: 15px;
+	border-bottom: #541412 2px solid;
+}
 .icons{
 	height: 40px;
 	opacity: 0.45;
+}
+.call h2{
+	text-align: left;
 }
 .food-item{
 	height: 200px;
@@ -116,13 +133,29 @@ a:active{
 	text-align: left;
 	padding: 20px;
 	margin-top: 40px;
-	color: #541412;
+	background-color: #541412;
 	width: 100%;
+	color: #f3e4bb;
+    overflow: hidden;
+}
+#main-footer a{
+	text-decoration: none;
+	color: #f3e4bb;
+}
+#main-footer ul{
+	display: flex;
+	flex-direction: row;
+}
+#main-footer li{
+    border-right: 1px rgb(146, 20, 20) solid ;
+	padding-right: 3%;
 }
 .right, .left{
 	display: flex;
 	flex-direction: row;
 	gap: 10%;
+    border-bottom: #541412 2px dashed;
+	padding:10px;
 }
 
 .food-item{
@@ -130,20 +163,24 @@ a:active{
 	border: #752c1a 1px double;
 	border-radius: 10%;
 }
-.row{
-	width: 100%;
-	margin-top: 10px;
+
+#chefs img{
+	width: 200px;
+	height: 200px;
+	border-radius: 20%;
 }
-.reviews{
-	margin: auto;
+h2{
+	text-align: center;
 }
-.rvw{
-	margin: 5px auto;
+.chefs{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 	padding: 10px;
-	margin-bottom: 40px;
-	box-shadow: 0 3px 5px black;
-	box-sizing: border-box;
-	border-radius: 10px;
-	width: 100%;
-	background-color: #752c1a;
+}
+@media screen (max-width:320px) {
+	#showcase{
+		text-align: center;
+	}
 }
