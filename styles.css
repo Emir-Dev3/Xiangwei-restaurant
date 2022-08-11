@@ -116,14 +116,6 @@ a:active{
 	width: 100%;
 }
 
-.csr{
-border: 1px solid #541412;
-width: 80%;
-height: 300px;
-margin-right: auto;
-margin-left: auto;
-font-family: monospace;
-}
 
 img{
 	max-width: 100%;
@@ -133,10 +125,6 @@ img{
 	width: 100%;
 	margin-top: 10px;
 }
-.lg-3:hover{
-	opacity: 50%;
-}
-
 .reviews{
 	margin: auto;
 }
@@ -168,47 +156,3 @@ img{
 
 
 
-@media(max-width: 600px){
-	#main{
-		width: 100%;
-		float: none;
-	}
-	#sidebar{
-		width: 100%;
-		display: block;	
-	}
-    .rvw{
-	float: none;
-	width: 80%;
-	margin: auto;
-	margin-bottom: 5px;
-}
-.services {
-	display: block;
-}
-}
-
-@media(min-width: 1200px){
-	.lg-3{
-		float: left;
-		width: 25%;
-		box-sizing: border-box;
-	}
-	img{
-		height: 100%;
-	}
-}
-
-
-        	
-
-
-@media(min-width: 950px) and (max-width: 1190px){
-.md-6{
-	float: left;
-		width: 50%;
-		box-sizing: border-box;
-
-}}
-
-	
