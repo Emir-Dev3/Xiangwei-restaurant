@@ -107,15 +107,22 @@ a:active{
 	height: 40px;
 	opacity: 0.45;
 }
+.food-item{
+	height: 200px;
+	width: 30%;
+}
 #main-footer{
 	clear: both;
-	text-align: center;
+	text-align: left;
 	padding: 20px;
 	margin-top: 40px;
 	color: #541412;
 	width: 100%;
 }
-
+.right, .left{
+	display: flex;
+	flex-direction: row;
+}
 
 img{
 	max-width: 100%;
@@ -138,21 +145,3 @@ img{
 	width: 100%;
 	background-color: #752c1a;
 }
-.rvw>p{
-	margin-top: 0;
-}
-.csr{
-	border: 1px solid #541412;
-	width: 80%;
-	height: 300px;
-	margin-right: 8px;
-	margin-left: 8px;
-	font-family: monospace;
-	border-top-right-radius: 25px;
-	border-bottom-left-radius: 25px;
-	border-bottom-right-radius: 8px;
-	border-top-left-radius: 8px;
-	}
-
-
-
