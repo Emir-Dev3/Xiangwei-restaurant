@@ -50,12 +50,11 @@ a:active{
 	background-size : cover;
 	margin-bottom: 30px;
 	min-height: 400px;
-	padding-bottom: 20px;
-	color: #f8cbaf;
+	color: #f1cab1;
 	font-size: large;
 	text-align: left;
 	padding-left: 30%;
-	padding-top: 150px;
+	align-items: center;
 }
 .btn-1 {
 	background-color: #712e1e;
@@ -66,11 +65,6 @@ a:active{
 	font-family: cursive;
     font-size: large;
 	margin-bottom: 50px;
-}
-.btn-1:hover {
-	background-color: #f3e4bb;
-	transform: translate(0px, 0px) rotate(20deg);
-	color: #541412;
 }
 .btn-2{
 	background-color: #712e1e;
@@ -92,7 +86,9 @@ a:active{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	gap: 200px;
+	gap: 20%;
+	align-items: center;
+	margin-top: -30px;
 }
 .services-we-offer{
 	display: flex;
@@ -156,6 +152,7 @@ a:active{
 	gap: 10%;
     border-bottom: #541412 2px dashed;
 	padding:10px;
+	align-items: center;
 }
 
 .food-item{
@@ -178,4 +175,51 @@ h2{
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px;
+}
+.right div{
+	text-align: right;
+}
+.left div {
+	text-align: 
+}
+
+
+@media(max-width: 768px) {
+	nav{
+		display: block;
+	}
+	nav img{
+		text-align: center;
+	}
+	.welcome-container{
+		display: block;
+		margin-top: auto;
+		text-align: center;
+	}
+	.call h2{
+         text-align: center;
+	}
+
+    #showcase{
+	text-align: center;
+	padding: 0;
+    }
+     .btn-1{
+	position:  fixed;
+	right: 5%;
+	width: 100px;
+	bottom: 10%;
+    }
+	.services-we-offer, .chefs{
+		display: block;
+	}
+	.services {
+		width: 80%;
+		margin: auto;
+		margin-bottom: 5%;
+	}
+	#main-footer ul{
+		display: block;
+	}
+	
 }
