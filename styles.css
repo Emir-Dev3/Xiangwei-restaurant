@@ -18,13 +18,14 @@ body{
 }
 nav {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
+}
+nav img {
+	margin-left: -100%;
 }
 nav ul {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 }
 li{
@@ -35,7 +36,7 @@ li{
 	color: rgb(95, 75, 7);
 	text-decoration: none;
 	font-size: 18px;
-	padding-right: 15px;
+	margin: 15px
 }
  a:hover{
 text-shadow: 0 2px 5px #712e1e;
@@ -52,9 +53,12 @@ a:active{
 	min-height: 400px;
 	color: #f1cab1;
 	font-size: large;
-	text-align: left;
-	padding-left: 30%;
+	text-align: center;
 	align-items: center;
+}
+#showcase .container h1 {
+	font-size: 50px;
+	margin-top: 80px;
 }
 .btn-1 {
 	background-color: #712e1e;
@@ -65,6 +69,11 @@ a:active{
 	font-family: cursive;
     font-size: large;
 	margin-bottom: 50px;
+	width: 20%;
+}
+.btn-1:hover {
+	background-color:#f3e4bb;
+	color: #712e1e;
 }
 .btn-2{
 	background-color: #712e1e;
@@ -93,7 +102,7 @@ a:active{
 .services-we-offer{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	gap: 20px;
 }
 .services {
 	color: goldenrod;
@@ -107,7 +116,7 @@ a:active{
 	padding-bottom: 15px;
 	padding-top: 15px;
 	border: 2px solid#541412;
-    margin: 0 5px ;
+	margin-left: 35px;
 }
 #services{
 	padding-bottom: 15px;
@@ -119,6 +128,11 @@ a:active{
 }
 .call h2{
 	text-align: left;
+	opacity: 90%;
+}
+.call p{
+	text-align: left;
+	opacity: 90%;
 }
 .food-item{
 	height: 200px;
@@ -134,17 +148,26 @@ a:active{
 	color: #f3e4bb;
     overflow: hidden;
 }
+#main-footer {
+	text-align: center;
+}
+#main-footer .copyright p {
+	font-size: 25px;
+	opacity: 80%;
+}
 #main-footer a{
 	text-decoration: none;
 	color: #f3e4bb;
 }
-#main-footer ul{
+#main-footer .contact ul{
+	margin-top: 20px;
+	margin-left: 150px;
 	display: flex;
-	flex-direction: row;
 }
 #main-footer li{
     border-right: 1px rgb(146, 20, 20) solid ;
 	padding-right: 3%;
+	opacity: 80%;
 }
 .right, .left{
 	display: flex;
@@ -180,19 +203,84 @@ h2{
 	text-align: right;
 }
 .left div {
-	text-align: 
+	text-align: ;
 }
-
-
-@media(max-width: 768px) {
+.chef p{
+	text-align: center;
+	font-size: 20px;
+	opacity: 80%;
+}
+@media only screen and (max-width: 1024px) {
+	nav img {
+		margin-left: -70%;
+	}
+	.services {
+		height: 200px;
+		width: 350px;
+	}
+	.services h3 {
+		margin-top: 5px;
+	}
+	#main-footer .contact ul {
+		margin-left: 0px;
+	}
+	#main-footer .contact ul a {
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	nav img {
+		margin-left: 10px;
+	}
+	#main-header .container nav ul li a {
+		margin: 0px;
+	}
+	.btn-1 {
+		padding: 15px;
+		margin-bottom: 50px;
+		width: 30%;
+	}
+	.call .welcome-container img {
+		width: 270px;
+	}
+	#chefs .chefs {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#chefs .chefs img {
+		margin-left: 50px;
+		width: 70%;
+		height: 350px;
+		border-radius: 20px;
+	}
+	#chefs .chefs p {
+		font-size: 30px;
+	}
+	.services {
+		height: 200px;
+		width: 550px;
+		margin-left: 2px;
+	}
+	.services h3 {
+		margin-top: 5px;
+	}
+	#main-footer .contact ul li{
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 600px) {
 	nav{
-		display: block;
+		
 	}
 	nav img{
-		text-align: center;
+		margin-left: 5%;
+	}
+	nav ul li a{
+		font-size: 10px;
+		padding-right: 0px;
 	}
 	.welcome-container{
-		display: block;
+		flex-direction: column-reverse;
 		margin-top: auto;
 		text-align: center;
 	}
@@ -207,7 +295,59 @@ h2{
      .btn-1{
 	position:  fixed;
 	right: 5%;
-	width: 100px;
+	width: 50%;
+	bottom: 10%;
+    }
+	#chefs .chefs img {
+		margin-left: 20px;
+		width: 90%;
+		height: 350px;
+		border-radius: 20px;
+	}
+	.services-we-offer, .chefs{
+		display: block;
+	}
+	.services {
+		width: 80%;
+		margin: auto;
+		margin-bottom: 5%;
+	}
+	#main-footer .contact ul{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+	#main-footer .contact ul li a {
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 475px) {
+	nav{
+		flex-direction: column;
+	}
+	nav img{
+		margin-left: -200px;
+	}
+	nav ul li a{
+		font-size: 15px;
+		margin: 0;
+	}
+	.welcome-container{
+		flex-direction: column-reverse;
+		margin-top: auto;
+		text-align: center;
+	}
+	.call h2{
+         text-align: center;
+	}
+
+    #showcase{
+	text-align: center;
+	padding: 0;
+    }
+     .btn-1{
+	position:  fixed;
+	right: 5%;
+	width: 35%;
 	bottom: 10%;
     }
 	.services-we-offer, .chefs{
@@ -218,8 +358,44 @@ h2{
 		margin: auto;
 		margin-bottom: 5%;
 	}
-	#main-footer ul{
-		display: block;
+	#main-footer .contact ul{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
 	}
-	
+	#main-footer .contact ul li a {
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 375px) {
+	nav{
+		flex-direction: column;
+	}
+	nav img{
+		margin-left: -150px;
+	}
+	nav ul {
+		margin-left: -10px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	nav ul li a{
+		font-size: 15px;
+		margin: 0;
+		
+	}
+	.btn-1{
+		width: 60%;
+		}
+	#chefs .chefs img {
+		margin-left: 10px;
+		width: 90%;
+	}
+	#main-footer .contact ul{
+		margin-left: -50px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	#main-footer .contact ul li a {
+		font-size: 15px;
+	}
 }
