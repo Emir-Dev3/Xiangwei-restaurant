@@ -95,7 +95,7 @@ a:active {
   margin: 0 auto 16px;
   width: fit-content;
   padding: 5px 16px;
-  color: #712e1e;
+  color: #541412;
   list-style: none;
   text-decoration: none;
   width: 100%;
@@ -437,9 +437,13 @@ h2 {
   nav ul {
     display: none;
   }
+  .mobile-nav a {
+    margin-top: -10%;
+    padding: 5px 0px;
+  }
   #chefs .chefs img {
     margin-left: 10px;
-    width: 90%;
+    width: 100%;
   }
   #main-footer .contact ul {
     margin-left: -50px;
